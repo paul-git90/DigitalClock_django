@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">Digital Clock</h1>
+        <p class="text">{{ ora_formatata }}</p>
+        <pre>
+            {{ output_line.0 }}
+            {{ output_line.1 }}
+            {{ output_line.2 }}
+        </pre>
+    </div>
+
+</body>
+</html>
