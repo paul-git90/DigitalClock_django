@@ -4,7 +4,7 @@ import datetime
 
 def digital_clock(request):
     ora_curenta = datetime.datetime.now()
-    ora_formatata = ora_curenta.strftime('%H:%M:%S %p')
+    ora_formatata = ora_curenta.strftime('%H:%M:%S')
     ora_formatata = ora_formatata.replace(':', "o")
     dict_clock = {
         '0': [' _ ',
